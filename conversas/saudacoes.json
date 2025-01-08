@@ -1,0 +1,21 @@
+{
+    "versao": "1.0",
+    "conversas": [
+        {
+            "mensagens": ["olá", "oi", "oi, tudo bem?", "tudo bem?", "oie"],
+            "resposta": "Olá, sou o robô de atendimento do HEMOBA. Como posso te ajudar?"
+        },
+        {
+            "mensagens": ["Bom dia", "Olá, bom dia"],
+            "resposta": "Olá, sou o robô de atendimento do HEMOBA. Como posso te ajudar?"
+        },
+        {
+            "mensagens": ["Boa tarde", "Olá, boa tarde"],
+            "resposta": "Olá, sou o robô de atendimento do HEMOBA. Como posso te ajudar?"
+        },
+        {
+            "mensagens": ["Boa noite", "Olá, boa noite"],
+            "resposta": "Olá, sou o robô de atendimento do HEMOBA. Como posso te ajudar?"
+        }
+    ]
+}
