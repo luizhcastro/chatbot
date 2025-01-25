@@ -1,4 +1,5 @@
 {
+    "versao" : 1.0,
     "conversas" : [
         {
             "mensagens" : ["Onde fica o HEMOBA?", "Qual o endereço do HEMOBA?", "Qual a localização do HEMOBA?", "Onde fica?", "Qual o endereço?", "Qual a localização?" ],
