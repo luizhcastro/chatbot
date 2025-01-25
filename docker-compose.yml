@@ -11,11 +11,11 @@ services:
 
   chatbot-frontend:
     build:
-      context: ./chat
+      context: ./app/chat
     container_name: chatbot-frontend
     ports:
       - "3000:3000"
     volumes:
-      - ./chat:/chat
+      - ./app/chat:/app/chat
     depends_on:
       - chatbot-backend
