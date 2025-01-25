@@ -1,7 +1,7 @@
 from chatterbot import ChatBot
 from difflib import SequenceMatcher
 
-CONFIANCA_MINIMA = 0.50
+CONFIANCA_MINIMA = 0.7
 
 def comparar_mensagens(mensagem_digitada, mensagem_candidata):
     confianca = 0.0
@@ -13,15 +13,24 @@ def comparar_mensagens(mensagem_digitada, mensagem_candidata):
     return confianca
 
 def iniciar():
-    robo = ChatBot("Robô de Atendimento do Hemoba",
-                   storage_adapter="chatterbot.storage.SQLStorageAdapter",
-                   database_uri="sqlite:///data/chatbot.db",
+    robo = ChatBot("Robo de Atendimento do Hemoba",
                    read_only=True,
                    statement_comparison_function=comparar_mensagens,
                    logic_adapters=[{
                        "import_path": "chatterbot.logic.BestMatch"
                    }])
     return robo
+
+def executar_robo(robo):
+    while True:
+        mensagem = input("Digite alguma coisa... \n")
+        resposta = robo.get_response(mensagem.lower())
+        print(f"o valor da confiança é: {resposta.confidence}")
+        if resposta.confidence >= CONFIANCA_MINIMA:
+            print(">>", resposta.text)
+        else:
+            print("Infelizmente, ainda não sei responder isso")
+            print("Pergunte outra coisa")
 
 if __name__ == "__main__":
     robo = iniciar()

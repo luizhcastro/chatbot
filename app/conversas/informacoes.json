@@ -2,24 +2,24 @@
     "versao" : 1.0,
     "conversas" : [
         {
-            "mensagens" : ["Onde fica o HEMOBA?", "Qual o endereço do HEMOBA?", "Qual a localização do HEMOBA?", "Onde fica?", "Qual o endereço?", "Qual a localização?" ],
-            "resposta" : ["O o HEMOBA de Vitória da Conquista se localiza no endereço: Av. Crescencio Silveira - Hospital São Vicente - Bairro São Vicente"]
+            "mensagens" : ["Onde fica o HEMOBA?", "Qual o endereco do HEMOBA?", "Qual a localizacao do HEMOBA?", "Onde fica?", "Qual o endereco?", "Qual a localizacao?" ],
+            "resposta" : "O HEMOBA de Vitoria da Conquista se localiza no endereco: Av. Crescencio Silveira - Hospital Sao Vicente - Bairro Sao Vicente"
         },
         {
-            "mensagens" : ["Qual o horário de funcionamento?", "Que horas abre?", "Que horas fecha?", "Está aberto agora?", "Ainda está aberto?", "Que horas começa a funcionar?"],
-            "resposta" : ["Horário de funcionamento: Domingo: Fechado | Segunda a Sexta: 07:00 - 13:00 | Sábado: 24h de funcionamento"]
+            "mensagens" : ["Qual o horario de funcionamento?", "Que horas abre?", "Que horas fecha?", "Esta aberto agora?", "Ainda esta aberto?", "Que horas comeca a funcionar?"],
+            "resposta" : "Horario de funcionamento: Domingo: Fechado | Segunda a Sexta: 07:00 - 13:00 | Sabado: 24h de funcionamento"
         },
         {
-            "mensagens" : ["Quem pode doar sangue?", "Eu posso doar?", "Como saber se posso doar sangue?", "Qual critério para poder doar?", "Posso doar sangue?"],
-            "resposta" : ["No link a seguir você consegue encontrar todos os critérios para doação de sangue: https://www.gov.br/saude/pt-br/composicao/saes/sangue"]
+            "mensagens" : ["Quem pode doar sangue?", "Eu posso doar?", "Como saber se posso doar sangue?", "Qual criterio para poder doar?", "Posso doar sangue?"],
+            "resposta" : "No link a seguir voce consegue encontrar todos os criterios para doacao de sangue: https://www.gov.br/saude/pt-br/composicao/saes/sangue"
         },
         {
             "mensagens": ["Onde consigo ver o resultado do meu exame?", "Onde encontro o resultado?", "Onde consigo o resultado","Como vejo o resultado?", "Onde pego o resultado?"],
-            "resposta": ["Infelizmente hoje você só consegue obter o resultado dos exames realizados presencialmente na sede do Hemoba em Vitória da Conquista"]
+            "resposta": "Infelizmente hoje voce so consegue obter o resultado dos exames realizados presencialmente na sede do Hemoba em Vitoria da Conquista"
         },
         {
-            "mensagens" : ["O que preciso levar no dia da doação?", "O que preciso para poder doar?", "Quais documentos são necessários?", "Qual documento preciso levar no dia da doação?", "Quais os documentos exigidos?"],
-            "resposta" :  ["Para doar sangue, é necessário levar um documento oficial de identidade com foto, como a carteira de identidade, carteira de trabalho, carteira de motorista ou passaporte."]
+            "mensagens" : ["O que preciso levar no dia da doacao?", "O que preciso para poder doar?", "Quais documentos sao necessarios?", "Qual documento preciso levar no dia da doacao?", "Quais os documentos exigidos?"],
+            "resposta" :  "Para doar sangue, e necessario levar um documento oficial de identidade com foto, como a carteira de identidade, carteira de trabalho, carteira de motorista ou passaporte."
         }
     ]
 }

@@ -4,7 +4,7 @@ var server = http.Server(app)
 var io = require('socket.io')(server);
 var port = process.env.PORT || 3000;
 
-const botURL = 'http://chatbot-backend:5000/';
+const botURL = 'http://localhost:5000';
 
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/index.html');
