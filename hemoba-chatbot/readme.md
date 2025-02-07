@@ -17,24 +17,20 @@ Antes de executar o chatbot, verifique se você possui os seguintes itens instal
    ```
 
 ## Como Executar
-1. Inicie o chatbot:
-   ```terminal
-   python robo.py
-   ```
-2. Realize o treinamento:
+1. Realize o treinamento:
    ```terminal
    python treinamento.py
    ```
-3. Inicie o serviço:
+2. Inicie o serviço:
    ```terminal
    python servico.py
    ```
-4. Navegue até pasta chat e inicie o index.js:
+3. Navegue até pasta chat e inicie o index.js:
     ```terminal
     cd chat
    node index.js
    ```
-5. Acesse o endereço por um navegador web: 
+4. Acesse o endereço por um navegador web: 
    ``` 
    http://localhost:3000 
    ```
