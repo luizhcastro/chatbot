@@ -1,7 +1,7 @@
 from robo import *
 from flask import Flask
 
-VERSAO = "1.0"
+VERSAO = "0.1"
 
 robo = iniciar()
 servico_robo = Flask(__name__)
@@ -12,9 +12,9 @@ def get_versao():
 
 @servico_robo.route("/resposta/<mensagem>")
 def get_resposta(mensagem):
-    resposta = robo.get_response(mensagem.lower())
+    resposta = robo.get_response(mensagem)
 
     return resposta.text
 
 if __name__ == "__main__":
-    servico_robo.run(host="0.0.0.0", port=5000)
+    servico_robo.run()

@@ -3,31 +3,27 @@ from chatterbot.trainers import ListTrainer
 import json
 
 CONVERSAS = [
-    "./app/conversas/saudacoes.json",
-    "./app/conversas/informacoes.json",
+    "conversas/saudacoes.json",
+    "conversas/informacoes.json"
 ]
 
 def iniciar():
-    robo = ChatBot("Robo de Atendimento do Hemoba")
+    robo = ChatBot("Robô de Atendimento do Hemoba",)
     treinador = ListTrainer(robo)
 
     return treinador
 
 def carregar_conversas():
     conversas = []
-    for arquivo_conversas in CONVERSAS:
-        try:
-            with open(arquivo_conversas, "r") as arquivo:
-                conversas_para_treinamento = json.load(arquivo)
-                conversas.append(conversas_para_treinamento["conversas"])
-        except FileNotFoundError:
-            print(f"Arquivo {arquivo_conversas} nao encontrado.")
-            continue
-        except json.JSONDecodeError:
-            print(f"Erro ao decodificar o arquivo {arquivo_conversas}.")
-            continue
-    return conversas
 
+    for arquivo_conversas in CONVERSAS:
+        with open(arquivo_conversas, "r") as arquivo:
+            conversas_para_treinamento = json.load(arquivo)
+            conversas.append(conversas_para_treinamento["conversas"])
+
+            arquivo.close()
+
+    return conversas
 
 def treinar(treinador, conversas):
     for conversa in conversas:
@@ -35,7 +31,7 @@ def treinar(treinador, conversas):
             mensagens = mensagens_resposta["mensagens"]
             resposta = mensagens_resposta["resposta"]
 
-            print(f"treinando o robo. Mensagens: {mensagens}. Resposta: {resposta}")
+            print(f"Treinando o robô. Mensagens: {mensagens}. Resposta: {resposta}")
             for mensagem in mensagens:
                 treinador.train([mensagem, resposta])
 

@@ -18,8 +18,8 @@
             "resposta": "Infelizmente hoje voce so consegue obter o resultado dos exames realizados presencialmente na sede do Hemoba em Vitoria da Conquista"
         },
         {
-            "mensagens" : ["O que preciso levar no dia da doacao?", "O que preciso para poder doar?", "Quais documentos sao necessarios?", "Qual documento preciso levar no dia da doacao?", "Quais os documentos exigidos?"],
-            "resposta" :  "Para doar sangue, e necessario levar um documento oficial de identidade com foto, como a carteira de identidade, carteira de trabalho, carteira de motorista ou passaporte."
+            "mensagens" : ["Quais documentos sao necessarios?", "Qual documento preciso levar no dia da doacao?", "Quais os documentos exigidos?"],
+            "resposta" :  "Para doar sangue, e necessario levar um documento oficial de identidade com foto, como a carteira de identidade, carteira de trabalho, carteira de motorista ou passaporte"
         }
     ]
 }
